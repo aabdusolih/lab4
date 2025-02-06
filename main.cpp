@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cctype>
 using namespace std;
 
 /*  problem 1
@@ -206,9 +207,98 @@ int main() {
     return 0;
 }*/
 
+/*  problem 13
 int main() {
-    string char;
+    string input;
     cout << "Please enter a character: ";
-    cin >> char;
+    cin >> input;
+    if (islower(input[0])) {
+        cout << input << " is a lowercase letter." << endl;
+    }
+    else if (isupper(input[0])) {
+        cout << input << " is a uppercase letter." << endl;
+    }
+    else {
+        cout << input << " is not in the alphabet." << endl;
+    }
+    return 0;
+}*/
 
+/*  problem 14
+int main() {
+    double w1, w2, p1, p2, cost1, cost2;
+    cout << "Please enter the weight and price of package 1: " ;
+    cin >> w1 >> p1;
+    cout << "Please enter the weight and price of package 2: " ;
+    cin >> w2 >> p2;
+    cost1 = w1/p1;
+    cost2 = w2/p2;
+    if (cost1 < cost2) {
+        cout << "Package 2 has a better price." << endl;
+    }
+    else if (cost1 > cost2) {
+        cout << "Package 1 has a better price." << endl;
+    }
+    else {
+        cout << "They have the same price." << endl;
+    }
+    return 0;
+}*/
+
+/*  problem 15
+int main() {
+    int num;
+    cout << "Enter a three digit number: ";
+    cin >> num;
+    int char1 = num/100;
+    int char3 = num%10;
+    if (char1 == char3) {
+        cout << "The number is a palindrome." << endl;
+    }
+    else {
+        cout << "The number is not a palindrome." << endl;
+    }
+    return 0;
+}*/
+
+/*  problem 16
+int main() {
+    int x, y;
+    cout << "Enter the coordinates: ";
+    cin >> x >> y;
+    double rad = x*x + y*y;
+    if (rad <= 100) {
+        cout << "The point is in the circle." << endl;
+    }
+    else {
+        cout << "The point is out of the circle." << endl;
+    }
+    return 0;
+}*/
+
+
+int main() {
+    double gpa;
+    cout << "Enter GPA: ";
+    cin >> gpa;
+    int x = gpa*10;
+    switch (x) {
+        case 40 ... 45: {
+            cout << "You got 80% scholarship" << endl;
+        }
+        break;
+        case 35 ... 39: {
+            cout << "You got 60% scholarship" << endl;
+        }
+        break;
+        case 30 ... 34: {
+            cout << "You got 50% scholarship" << endl;
+        }
+        break;
+        default: {
+            cout << "You got no scholarship" << endl;
+        }
+        break;
+    }
+    return 0;
 }
