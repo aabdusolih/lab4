@@ -207,7 +207,8 @@ int main() {
     return 0;
 }*/
 
-/*  problem 13
+
+/* problem 13
 int main() {
     string input;
     cout << "Please enter a character: ";
@@ -277,7 +278,7 @@ int main() {
 }*/
 
 
-int main() {
+/*int main() {
     double gpa;
     cout << "Enter GPA: ";
     cin >> gpa;
@@ -301,4 +302,4 @@ int main() {
         break;
     }
     return 0;
-}
+}*/
